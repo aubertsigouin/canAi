@@ -1,0 +1,1 @@
+var nau=nau||{};!function(){"use strict";var o={addGoodReadComponent:function(o,a){var t=a,n=$(".js-blog-list");return o.set(n,{display:"none",opacity:0},0),o.set(n,{display:"flex"},t).to(n,.5,{opacity:1},t),o.to(n,.5,{opacity:0},t+2),t+2.5}};nau.GoodReadAnimation=o}();
