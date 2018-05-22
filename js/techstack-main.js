@@ -4,26 +4,118 @@
 let data = [{
 	cat: 'Marketing / Médias sociaux', name: 'Acquisio', value: 30,
 	icon: 'img/acquisio.svg',
-	desc: `
-		Performance Marketing Solutions for Local Businesses and the Agencies that Serve Them
+	desc: `Performance Marketing Solutions for Local Businesses and the Agencies that Serve Them
+	
+		<p>Brossard, QC</p>
 
-		Brossard, QC
+		<p>Founded in 2003</p>
 
-		Founded in 2003
-
-		http://www.acquisio.com
+		<p><a href="https://www.w3schools.com">http://www.acquisio.com</a></p>
 		
 	`},{
 	cat: 'Internet des objets', name: 'Aerial', value: 30,
 	icon: 'img/aerial.png',
 	desc: `
-		Aerial creates technology that understands a person’s movements like never before. They are introducing the next generation of device-free, ambient Indoor Activity Recognition. Montreal, QC
-
-		Founded in 2015
-
-		http://www.aerial.ai/
+		Aerial creates technology that understands a person’s movements like never before. They are introducing the next generation of device-free, ambient Indoor Activity Recognition.
 		
-	`},
+		<p>Montreal, QC</p>
+
+		<p>Founded in 2015</p>
+
+		<p><a href = "http://www.aerial.ai/">http://www.aerial.ai/</a></p>
+		
+	`},{
+	cat: 'Vidéo 3D / Réalité virtuelle/augmentée', name: 'Airy3D', value: 30,
+	icon: 'img/airy3d.png',
+	desc: `
+		Optical modification of standard CMOS sensors to provide simulatneous 2D and 3D (depth) images from a single sensor. Partnering with several major camera manufacturers.
+	
+		<p>Montreal, QC</p>
+		
+
+		<p><a href = "http://www.airy3d.com/">http://www.airy3d.com/</a></p>
+		
+	`},{
+	cat: 'Vision par ordinateur', name: 'Algolux', value: 30,
+	icon: 'img/algolux.png',
+	desc: `
+		Smart Optimization for Vision Systems
+		<p>Montreal, QC</p>
+		
+		<p>Founded in 2016</p>
+		
+		<p><a href = "https://algolux.com/about/">https://algolux.com/about/</a></p>
+		
+	`},{
+	cat: 'Holding', name: 'ApSTAT Technologies', value: 30,
+	icon: 'img/apstat.png',
+	desc: `
+		Montreal, QC
+		
+		<p><a href = "http://www.apstat.com/fr/index.php">http://www.apstat.com/fr/index.php</a></p>
+		
+	`},{
+	cat: 'Robotique / Drone', name: 'ARA robotique', value: 30,
+	icon: 'img/ara.png',
+	desc: `
+		ARA Robotics is a Montreal-based company which develops an innovative, efficient UAV autopilot for industrial and commercial applications. ARA Robotics offers a variety of consulting and technological development services, all with innovation at its core basis. 
+		
+		<p>Montreal, QC</p>
+		
+		<p>Founded in 2014</p>
+		
+		<p><a href = "http://ara-uas.com/">http://ara-uas.com/</a></p>
+		
+	`},{
+	cat: 'Services', name: 'arcbees', value: 30,
+	icon: 'img/arcbees.svg',
+	desc: `
+		Consulting and app, web and/or software development services for businesses looking to offer quality applications to their clients.	
+		
+		<p>Quebec, QC</p>
+		
+		<p>Founded in 2010</p>
+		
+		<p><a href = "http://www.arcbees.com/">http://www.arcbees.com/</a></p>
+		
+	`},{
+	cat: 'Services', name: 'Atlants Embedded', value: 30,
+	icon: 'img/atlants.png',
+	desc: `
+		Embedded technology combining signal processing with the best machine learning algorithms for your products		
+		
+		<p>Montreal QC</p>
+		
+		<p><a href = "http://atlantsembedded.com">http://atlantsembedded.com</a></p>
+		
+	`},{
+	cat: 'Agent conversationnel', name: 'Automat', value: 30,
+	icon: 'img/automat.png',
+	desc: `
+		Automat is helping companies use AI to talk to their customers, to understand them and serve them better. We're the first Conversational Marketing platform powered by artificial intelligence and we believe in a world where every company can have a personalized one-on-one conversation with every customer, fan, and follower. 
+		
+		<p>Montreal, QC</p>
+		
+		<p>Founded in 2017</p>
+		<p><a href = "http://www.automat.ai/">http://www.automat.ai/</a></p>
+		
+	`},{
+	cat: 'Services', name: 'Avanteo Consulting', value: 30,
+	icon: 'img/av.png',
+	desc: `
+			Avanteo Consulting provides digital health innovation and business strategy services that enable life sciences, software and health technology companies to transform healthcare challenges into positive real-world outcomes, provide added quality and efficiency to stakeholders, and maximize business opportunities and leadership.
+			
+			<p>Montreal QC</p>
+			
+			<p>Founded in 2015</p>
+			
+			<p><a href = "https://www.avanteoconsulting.com/">https://www.avanteoconsulting.com/</a></p>
+		
+	`}
+	
+	
+	
+	
 
 
 
@@ -180,12 +272,12 @@ let legendSize = d3.legendSize()
 	.labelAlign('end');
 
 // legend 2
-svg.append('g')
-	.classed('legend-size', true)
-	.attr('text-anchor', 'start')
-	.attr('transform', 'translate(150, 25)')
-	.style('font-size', '12px')
-	.call(legendSize);
+//svg.append('g')
+//	.classed('legend-size', true)
+//	.attr('text-anchor', 'start')
+//	.attr('transform', 'translate(150, 25)')
+//	.style('font-size', '12px')
+//	.call(legendSize);
 
 
 /*
