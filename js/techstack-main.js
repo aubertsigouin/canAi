@@ -13,6 +13,17 @@ let data = [{
 		<p><a href="https://www.w3schools.com">http://www.acquisio.com</a></p>
 		
 	`},{
+	cat: 'Vidéo 3D / Réalité virtuelle/augmentée', name: 'Airy3D', value: 30,
+	icon: 'img/airy3d.png',
+	desc: `
+		Optical modification of standard CMOS sensors to provide simulatneous 2D and 3D (depth) images from a single sensor. Partnering with several major camera manufacturers.
+	
+		<p>Montreal, QC</p>
+		
+
+		<p><a href = "http://www.airy3d.com/">http://www.airy3d.com/</a></p>
+		
+	`},{
 	cat: 'Internet des objets', name: 'Aerial', value: 30,
 	icon: 'img/aerial.png',
 	desc: `
@@ -23,17 +34,6 @@ let data = [{
 		<p>Founded in 2015</p>
 
 		<p><a href = "http://www.aerial.ai/">http://www.aerial.ai/</a></p>
-		
-	`},{
-	cat: 'Vidéo 3D / Réalité virtuelle/augmentée', name: 'Airy3D', value: 30,
-	icon: 'img/airy3d.png',
-	desc: `
-		Optical modification of standard CMOS sensors to provide simulatneous 2D and 3D (depth) images from a single sensor. Partnering with several major camera manufacturers.
-	
-		<p>Montreal, QC</p>
-		
-
-		<p><a href = "http://www.airy3d.com/">http://www.airy3d.com/</a></p>
 		
 	`},{
 	cat: 'Vision par ordinateur', name: 'Algolux', value: 30,
