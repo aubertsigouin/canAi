@@ -24,7 +24,7 @@ let data = [{
 		<p><a href = "http://www.airy3d.com/">http://www.airy3d.com/</a></p>
 		
 	`},{
-	cat: 'Internet des objets', name: 'Aerial', value: 30,
+	cat: 'Télésanté', name: 'Aerial', value: 30,
 	icon: 'img/aerial.png',
 	desc: `
 		Aerial creates technology that understands a person’s movements like never before. They are introducing the next generation of device-free, ambient Indoor Activity Recognition.
@@ -111,17 +111,41 @@ let data = [{
 			
 			<p><a href = "https://www.avanteoconsulting.com/">https://www.avanteoconsulting.com/</a></p>
 		
-	`}
-	
-	
-	
-	
-
-
-
-
-
-];
+	`},{
+	cat: 'Télésanté', name: 'BioMindR', value: 30,
+	icon: 'img/biomindr.png',
+	desc: `
+			Developer of wireless signals and machine learning techniques designed to reshape biosignal monitoring for wearables. The company leverages wireless signals and machine learning to develop a contact-free, accurate and power efficient bio-signals sensing platform enabling athletes, coaches and clinicians to continuously monitor and better approach their hydration, glucose and fluid levels.
+			
+			<p>Montreal QC</p>
+			
+			<p>Founded in 2016</p>
+		
+	`},{
+	cat: 'Chaînes de blocs', name: 'Blockstream', value: 30,
+	icon: 'img/blockstream.png',
+	desc: `
+			Blockstream is FinTech company that works to accelerate innovation in crypto currencies, open assets, and smart contracts.Its products include elements, an open-source platform for building and testing applications; and liquid, which is designed for bitcoin exchanges and high-speed transactions.
+			
+			<p>Montreal QC</p>
+			
+			<p>Founded in 2014</p>
+		
+		
+			<p><a href = "https://blockstream.com/">https://blockstream.com/</a></p>
+	`},{
+	cat: 'Services', name: 'Botler', value: 30,
+	icon: 'img/botler.png',
+	desc: `
+			An artificially intelligent immigration assistant.
+			
+			<p>Montreal QC</p>
+			
+			<p>Founded in 2014</p>
+		
+		
+			<p><a href = "https://botler.ai/">https://blockstream.com/</a></p>
+	`}];
 /*eslint-enable indent*/
 /*global d3*/
 let svg = d3.select('#teck-stack-svg');
@@ -183,7 +207,7 @@ let nodes = pack(root).leaves().map(node => {
 });
 simulation.nodes(nodes).on('tick', ticked);
 
-svg.style('background-color', '#eee');
+//svg.style('background-color', '#eee');
 let node = svg.selectAll('.node')
 	.data(nodes)
 	.enter().append('g')
@@ -258,7 +282,8 @@ svg.append('g')
 	.classed('legend-color', true)
 	.attr('text-anchor', 'start')
 	.attr('transform', 'translate(20,30)')
-	.style('font-size', '12px')
+	.style('font-size', '18px')
+	.style('color', 'rgb(255,255,259)')
 	.call(legendOrdinal);
 
 let sizeScale = d3.scaleOrdinal()
